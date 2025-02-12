@@ -12,3 +12,21 @@ class Result:
         self.status_code = int(status_code)
         self.message = str(message)
         self.data = data if data else []
+
+
+class Paging:
+    total: int
+    offset: int
+    limit: int
+
+    def __init__(self, total: int, offset: int, limit: int) -> None:
+        self.total = total
+        self.offset = offset
+        self.limit = limit
+
+
+class Link:
+    href: str
+
+    def __init__(self, href: str) -> None:
+        self.href = href
