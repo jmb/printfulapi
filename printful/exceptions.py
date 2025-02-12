@@ -1,0 +1,2 @@
+class PrintfulApiException(Exception):
+    pass
