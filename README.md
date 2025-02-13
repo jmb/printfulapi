@@ -2,6 +2,8 @@
 
 A python wrapper for [Printful API v2.0](https://developers.printful.com/docs/v2-beta/).
 
+🚧 This project is very much a **work in progress** and is _very_ incomplete - [Please help!](#contributing) 🚧
+
 ## Usage
 Set your Printful API token up at https://developers.printful.com
 
