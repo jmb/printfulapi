@@ -35,7 +35,8 @@ class RestAdapter:
         """
         Constructor method
         """
-        self.url = f"https://{hostname}/{ver}"
+        # Set the API url and remove trailing / (if ver is empty)
+        self.url = f"https://{hostname}/{ver}".removesuffix("/")
         self._api_key = api_key
         self._ssl_verify = ssl_verify
         if not ssl_verify:
