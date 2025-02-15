@@ -1,6 +1,6 @@
 # Printful API Python Library
 
-A python wrapper for [Printful API v2.0](https://developers.printful.com/docs/v2-beta/).
+A python wrapper for the [Printful API](https://developers.printful.com/docs/).
 
 🚧 This project is very much a **work in progress** and is _very_ incomplete - [Please help!](#contributing) 🚧
 
@@ -25,8 +25,11 @@ print(stores.data)
 
 The output is a JSON dictionary with a list of stores with some extra paging and link information:
 ```
-{'data': [{'id': 10, 'name': 'My Store', 'type': 'native'}], 'extra': [], 'paging': {'total': 1, 'limit': 20, 'offset': 0}, '_links': {'self': {'href': 'https://api.printful.com/v2/stores?limit=20'}}}
+{'code': 200, 'result': [{'id': 10, 'name': 'My Store', 'type': 'native'}], 'extra': [], 'paging': {'total': 1, 'limit': 20, 'offset': 0}}
+
 ```
+
+_In the [v2 API](https://developers.printful.com/docs/v2-beta/), the `result` list is named `data` for this example_
 
 ## Contributing
 

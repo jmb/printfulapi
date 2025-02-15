@@ -16,7 +16,7 @@ class RestAdapter:
     :type hostname: str, optional
     :param api_key: API Key used for authentication
     :type api_key: str
-    :param ver: API version string, defaults to "v2"
+    :param ver: API version string, defaults to "" (version 1)
     :type ver: str, optional
     :param ssl_verify: if having SSL/TLS cert validation issues turn off with `False`, defaults to `True`
     :type ssl_verify: bool, optional
@@ -28,7 +28,7 @@ class RestAdapter:
         self,
         hostname: str = "api.printful.com",
         api_key: str = "",
-        ver: str = "v2",
+        ver: str = "",
         ssl_verify: bool = True,
         logger: logging.Logger = None,
     ):
